@@ -4,56 +4,134 @@
   <title>Interview Details</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
-    
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
+      background-color: black;
+      color: white;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
       padding: 20px;
-      background-color: #BCFD107;
-      border-radius: 5px;
-      box-sadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    
     h1 {
-      text-align: center;
+      font-size: 24px;
+      animation: fade-in 1s ease-in-out;
     }
-    
-    .details {
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      animation: slide-up 1s ease-in-out;
+    }
+    .profile-image {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      animation: zoom-in 1s ease-in-out;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    nav ul li a:hover {
+      background-color: white;
+      color: black;
+    }
+    .resume-button {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+    .social-buttons {
       margin-top: 20px;
     }
-    
-    .details label {
-      font-weight: bold;
+    .social-buttons a {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 4px;
     }
-    
-    .details p {
-      margin: 10px 0;
+    .social-buttons a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    @keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slide-up {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes zoom-in {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .profile-image {
+        max-width: 150px;
+      }
+      .social-buttons a {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#personal-details">Personal Details</a></li>
+    </ul>
+  </nav>
 
-    <div class="details">
-      <label>Name:</label>
-      <p>VARREY ABHIRAM SAI GANESH</p>
-      
-      <label>Email:</label>
-      <p>abhiramvarrey1@gmail.com</p>
-      
-      <label>Phone:</label>
-      <p>+91 6300894287</p>
-      
-      <label>Location:</label>
-      <p>Amalapuram, Andhra Pradesh, India</p>
-      
-      <label>Skills:</label>
-      <p>C language, Python, HTML, CSS, Arduino IDE, Cisco packet tracer</p>
+  <h1 id="home">Interview Details</h1>
 
-    </div>
+  <!-- Replace "your-image.png" with the path to your actual image file -->
+  <img class="profile-image" src=""DSC_0210-removebg-preview.png"" alt="Profile Image">
+
+  <h2 id="personal-details">VARREY ABHIRAM SAI GANESH</h2>
+  <!-- Replace "your-resume.pdf" with the path to your actual resume PDF -->
+  <h2>Resume</h2>
+  <a href="https://flowcv.com/resume/npa219j9ao" class="resume-button" download>Download Resume</a>
+
+  <div class="social-buttons">
+    <a href="https://www.linkedin.com/your-profile" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/your-profile" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/your-profile" target="_blank">Facebook</a>
   </div>
 </body>
 </html>
