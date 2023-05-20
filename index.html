@@ -5,7 +5,7 @@
   <style>
     body {
       background-color: linear-gradient(to right, #ff7300, #feae01, #ffc601);
-      color: white;
+      color: rgb(0, 0, 0);
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 20px;
@@ -20,11 +20,15 @@
       animation: slide-up 1s ease-in-out;
     }
     .profile-image {
-      max-width: 200px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
       animation: zoom-in 1s ease-in-out;
+      clip-path: circle(50%);
     }
+
     nav {
       margin-bottom: 20px;
     }
