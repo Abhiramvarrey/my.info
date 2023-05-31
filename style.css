@@ -12,6 +12,11 @@ h1 {
   animation: fade-in 1s ease-in-out;
   text-align: center;
 }
+*img{
+    mask-type: inherit;
+    size: 10px;
+    margin: auto;
+}
 p {
   font-size: 18px;
   font-family:'Snell Roundhand';
