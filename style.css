@@ -14,10 +14,9 @@ h1 {
 }
 p {
   font-size: 18px;
-  font-family:'Snell Roundhand', cursive;
-  text-align: center;
+  font-family:'Snell Roundhand';
+  text-align: right;
   line-height: 1.5;
-  animation: slide-up 1s ease-in-out;
 }
 .profile-image {
   width: 200px;
@@ -79,7 +78,7 @@ nav ul li a:hover {
 }
 .social-buttons a:hover {
   background-color: black;
-  color: white;
+  color: gold;
 }
 
 @keyframes fade-in {
