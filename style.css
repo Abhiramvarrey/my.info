@@ -7,25 +7,59 @@ body {
   margin: 0;
   padding: 20px;
 }
-body :hover{
-  background-image: -moz-linear-gradient(blue);
-}
 h1 {
   font-size: 24px;
-  animation: fade-in 1s ease-in-out;
   text-align: center;
 }
-img{
-    mask-type: inherit;
-    size: 10px;
-    margin: auto;
-}
-p {
-  font-size: 18px;
-  font-family:'Lucida Handwriting', cursive;
+.acedamic{
   text-align: left;
-  margin-left: 29px;
-  line-height: 2;
+}
+#navbar{
+  overflow: auto;
+  background-color: black;
+  margin-bottom: 10px;
+  position: fixed;
+}
+#navbar a {
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: wheat;
+  color: black;
+}
+.content {
+  padding: 16px;
+}
+.interview{
+  margin-top: 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+span{
+  color:whitesmoke;
+  font-size: 19px;
+  font-family: 'Lucida Handwriting', cursive;
+  font-weight: bold;
+}
+p{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  line-height: 25px;
 }
 .profile-image {
   width: 200px;
@@ -33,14 +67,15 @@ p {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
-  animation: zoom-in 1s ease-in-out;
   clip-path: circle(50%);
+  z-index: 0;
 }
-nav {
-  position: absolute;
-  padding: 0%;
-  margin: 0%;
-  margin-bottom: 20px;
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
 }
 nav ul {
   list-style: none;
@@ -55,9 +90,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
-}
-nav ul li a:hover {
-  color:wheat;
 }
 .social-buttons{
   flex: 1 1 auto;
@@ -80,6 +112,7 @@ nav ul li a:hover {
 }
 .social-buttons a:hover {
   background-position: right center;
+  color:red;
 }
 
 @keyframes fade-in {
@@ -108,10 +141,18 @@ nav ul li a:hover {
     font-size: 16px;
   }
   .profile-image {
-    max-width: 150px;
+    max-width: 200px;
+  }
+  nav{
+    height:38px;
+    font-size: smaller;
+  }
+  nav ul li a{
+    font-size: smaller;
   }
   .social-buttons a {
     font-size: 14px;
     padding: 8px 16px;
   }
+
 }
