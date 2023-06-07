@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <div class="content">
   <title>Interview Details</title>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/7c902b6a7c.js" crossorigin="anonymous"></script>
+  </div>
 </head>
 <body>
-  <nav>
+  <nav id="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#personal-details">Personal Details</a></li>
       <li><a href="#profile-link">PROFILE LINKS</a></li>
+      <li><a href="#study">Acedamic details</a></li>
     </ul>
   </nav>
-
-  <h1 id="home">Interview Details</h1>
+ <div class="content">
+  <h1 id="home" class="interview">Interview Details</h1>
   <img class="profile-image" src="DSC_0210.JPG" alt="Profile Image">
     <div>
-    <p id="personal-details">NAME : VARREY ABHIRAM SAI GANESH<br>
-     DATE OF BIRTH : 30/05/2003<br>
-     GENDER : MALE<br>
-     MOBILE NUMBER : +91 6300894287<br>
-     MAIL : abhiramvarrey@gmail.com<br>
-     MARITAL STATUS : UNMARRIED<br>
-     NATIONALITY : INDIAN<br>
-     RELIGION : HINDU<br>
-     ADDRESS : 11-454, A V R NAGAR,
-                KONKAPALLI,PERURU,
-                AMALAPURAM,EAST GODAVARI DISTRICT,
-                ANDHRAPRADESH,PINCODE-533201.
+      <h1>Personal Information</h1>
+    <p id="personal-details">
+     <span >NAME :</span>VARREY ABHIRAM SAI GANESH.<br>
+     <span >DATE OF BIRTH :</span> 30/05/2003.<br>
+     <span >GENDER :</span> MALE.<br>
+     <span >MOBILE NUMBER :</span> +91 6300894287<br>
+     <span >MAIL :</span> abhiramvarrey1@gmail.com<br>
+     <span > MARITAL STATUS :</span> UNMARRIED.<br>
+     <span >NATIONALITY :</span> INDIAN.<br>
+     <span >RELIGION :</span> HINDU.<br>
+     <span >ADDRESS :</span> 11-454, A V R NAGAR,
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KONKAPALLI,PERURU,
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMALAPURAM,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EAST GODAVARI DISTRICT,
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANDHRAPRADESH,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PINCODE-533201.
     </p>
+    </div>
+    <div class="content">
+      <h1>About me</h1>
+      <p>Hello there, my name is Abhiram. I was born on May 30, 2003, in Amalapuram, East Godavari, Andhra Pradesh, India.</p>
+    </div>
+    <div>
+      <h1 id="study">Acedamic details</h1>
+      <h2 class="acedamic">
+          <span>B-TECH 2020 - PRESENT</span></h2>
+          <p>pursuing b.tech in <a href="http://srkrec.edu.in/">SRKR ENGINEERING COLLEGE</a> the stream of electronics and communication engineering with 8.73 cgpa till now</p>
+      <h2 class="acedamic">
+        <span>BOARD OF INTERMIDEATE(10+2) 2018-2020</span></h2>
+        <p> completed board of intermideate in <a href="http://www.sasi.edu.in/">SASI NEW GEN JUNIOR COLLEGE</a>with 9.75 gpa  </p>
+      <h2 class="acedamic">
+        <span>board OF SECONDARY EDUCATION 2017-2018</span></h2>
+        <p>
+          completed board of secondary education in <a href="http://www.sasi.edu.in/">SASI EM HIGH SCHOOL</a>with 9.7 gpa
+        </p>
     </div>
   <h2 id="profile-link">PROFILE LINKS</h2>
     <button type="button" class="social-buttons">
@@ -51,5 +76,20 @@
     <a href="https://www.facebook.com/your-profile" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i>Facebook  
     </a>
     </button>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+ </div>
 </body>
 </html>
