@@ -13,31 +13,56 @@ h1 {
 }
 .acedamic{
   text-align: left;
+  display:flex;
 }
 #navbar{
-  overflow: auto;
+  text-align: left;
   background-color: black;
-  margin-bottom: 10px;
   position: fixed;
+  font-size: medium;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 #navbar a {
-  float: center;
   color: white;
-  text-align: center;
-  padding: 5px;
+  padding: 2px;
   text-decoration: none;
 }
 #navbar a:hover {
   background-color: wheat;
   color: black;
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
 .content {
-  padding: 16px;
+  padding: 0px;
+  display: flex;
+}
+.details{
+ width:50%;
+}
+.photo{
+  width:50%
+}
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  clip-path: square;
+  z-index: 0;
 }
 .interview{
-  margin-top: 0px;
+  margin-top: 10px;
 }
-
 .sticky {
   position: fixed;
   top: 0;
@@ -61,36 +86,7 @@ p{
   margin-left: 30px;
   line-height: 25px;
 }
-.profile-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  clip-path: circle(50%);
-  z-index: 0;
-}
-nav{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: left;
-  z-index: 1;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-}
+
 .social-buttons{
   flex: 1 1 auto;
   margin: 5px;
@@ -144,8 +140,12 @@ nav ul li a {
     max-width: 200px;
   }
   nav{
-    height:38px;
+    height:px;
     font-size: smaller;
+  }
+  nav a{
+    text-align:left;
+    margin-top: 0px;
   }
   nav ul li a{
     font-size: smaller;
