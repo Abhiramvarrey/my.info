@@ -50,7 +50,8 @@ nav ul li {
  width:50%;
 }
 .photo{
-  width:50%
+  width:50%;
+  text-align: center;
 }
 .profile-image {
   width: 300px;
