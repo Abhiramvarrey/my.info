@@ -115,7 +115,7 @@ p{
 }
 .social-buttons a:hover {
   background-position: right center;
-  color:red;
+  color:white;
 }
 
 @keyframes fade-in {
