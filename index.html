@@ -14,15 +14,15 @@
   <nav id="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#personal-details">Personal Details</a></li>
-      <li><a href="#profile-link">Profile links</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#study">Acedamic details</a></li>
+      <li><a href="#profile-link">Profile links</a></li>
     </ul>
   </nav>
  <h1 id="home" class="interview">HOLLA!!</h1>
  <div class="content">
     <div class="details">
-      <h1><span>About me</span></h1>
+      <h1 id="about"><span>About me</span></h1>
       <p class="about">Hello there, my name is Abhiram. I am currently pursuing a 4/4 b-tech in the ECE programme, and my cgpa is 8.68. I am technically proficient in the Python, C, and web technologies, particularly HTML and CSS. I serve as one of the class reps and am presently the coordinator for the cell promoting women's empowerment.I have a strong interest in programming.
       </p>
     </div>
@@ -64,7 +64,23 @@
     <a href="https://www.facebook.com/abhi.varrey" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i>Facebook  
     </a>
     </button>
+    <h1>contact me</h1>
+    <div class="content">
+       <button class="social-buttons">
+         <a onclick="callNumber">Phone</a>
+       </button>
+       <button class="social-buttons">
+         <a>mail</a>
+       </button>
+       <button class="social-buttons">
+        <a>whatsapp</a>
+       </button>
+    </div>
     <script>
+      function callNumber() {
+      var phoneNumber = "6300894287";
+      window.location.href = "+91" + phoneNumber;
+    }
       window.onscroll = function() {myFunction()};
       
       var navbar = document.getElementById("navbar");
