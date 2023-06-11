@@ -1,28 +1,37 @@
 
 body {
-  background-color:black;
-  color: wheat;
+  background-color:rgb(0, 0, 0);
+  color: white;
   font-family: 'Lucida Handwriting', cursive;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  font-size: medium;
 }
-h1 {
-  font-size: 24px;
+h1,h2 {
+  font-size: 30px;
   text-align: center;
 }
 .acedamic{
-  text-align: left;
-  display:flex;
+  text-align:center;
+  display: flex;
+}
+.contentbox{
+  text-align: center;
+  width:600px;
+  height:auto;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  margin-left: 400px;
 }
 #navbar{
   text-align: left;
-  background-color: black;
   position: fixed;
   font-size: medium;
   top: 0;
   width: 100%;
   z-index: 1;
+  height:auto;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 #navbar a {
   color: white;
@@ -43,33 +52,45 @@ nav ul li {
   margin-right: 10px;
 }
 .content {
-  padding: 0px;
+  padding-bottom:40px;
   display: flex;
+  align-items: center;
 }
 .details{
  width:50%;
 }
 .photo{
-  width:50%;
-  text-align: center;
+  width:auto;
+  height: auto;
+  padding: 50px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  margin-left: 150px;
+}
+.photo :hover{
+  transform: scale(1.1);
 }
 .about{
+  width: auto;
+  height:auto;
+  padding: 30px;
   text-align: center;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 .name{
   text-align: center;
   font-weight:bolder;
+  line-height: 10px;
 }
 .profile-image {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  margin-bottom: 20px;
   clip-path: square;
   z-index: 0;
 }
 .interview{
-  margin-top: 10px;
+  margin-top:50px;
+  color: wheat;
 }
 .sticky {
   position: fixed;
@@ -77,12 +98,17 @@ nav ul li {
   width: 100%;
   text-align: left;
 }
-
+.lowerpage{
+  text-align: left;
+  width: auto;
+  height: auto;
+}
 .sticky + .content {
   padding-top: 60px;
+
 }
 span{
-  color:whitesmoke;
+  color:wheat;
   font-size: 19px;
   font-family: 'Lucida Handwriting', cursive;
   font-weight: bold;
@@ -161,5 +187,4 @@ p{
     font-size: 14px;
     padding: 8px 16px;
   }
-
 }
