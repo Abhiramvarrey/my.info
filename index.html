@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <div class="content">
   <title>Interview Details</title>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/7c902b6a7c.js" crossorigin="anonymous"></script>
-  </div>
 </head>
 <body>
   <nav id="navbar">
@@ -19,7 +17,7 @@
       <li><a href="#profile-link">Profile links</a></li>
     </ul>
   </nav>
- <h1 id="home" class="interview">HOLLA!!</h1>
+ <h1 id="home" class="interview">Welcome  to  my resume  landing  page</h1>
  <div class="content">
     <div class="details">
       <h1 id="about"><span>About me</span></h1>
@@ -27,14 +25,20 @@
       </p>
     </div>
     <div class="photo">
-      <img class="profile-image" src="DSC_0210.JPG" alt="Profile Image">
-      <p class="name">
+      <img class="profile-image" src="DSC_0210.JPG" alt="Profile Image"><br>
+      <h4 class="name">
         VARREY ABHIRAM SAI GANESH
-      </p>
+      </h4>
+      <div class="icon">
+       <i class="fa-brands fa-github"></i>
+       <i class="fa-brands fa-linkedin"></i>
+       <i class="fa-brands fa-instagram"></i>
+       <i class="fa-brands fa-whatsapp"></i>
+      </div>
     </div>
  </div>
-    <div>
-      <h1 id="study">Acedamic details</h1>
+    <div class="contentbox">
+      <h1 id="study"><span>Acedamic details</span></h1>
       <h2 class="acedamic">
           <span>B-TECH 2020 - PRESENT</span></h2>
           <p>pursuing b.tech in SRKR ENGINEERING COLLEGE the stream of electronics and communication engineering with 8.68 cgpa till now</p>
@@ -68,7 +72,10 @@
        <button class="social-buttons">
         <a href="https://wa.link/8uj03e"><i class="fa-solid fa-brands fa-whatsapp fa-shake"></i>whatsapp</a>
        </button>
-    <h1>Contact details</h1>
+    <div class="lowerpage"><h1>Contact details</h1>
+      <span>phone no: </span>  <a>+91 6300894287</a><br>
+      <span>email id: </span> <a> abhiramvarrey@gmail.com</a>
+    </div>
     <script>
       window.onscroll = function() {myFunction()};
       
@@ -76,10 +83,12 @@
       var sticky = navbar.offsetTop;
       
       function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
+        if (window.pageYOffset <= sticky) {
+          navbar.classList.add("sticky");
+          navbar.style.backgroundColor='black';
         } else {
           navbar.classList.remove("sticky");
+          navbar.style.backgroundColor='#353839';
         }
       }
       </script>
