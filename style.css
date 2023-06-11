@@ -170,7 +170,7 @@ p{
   100% { transform: scale(1); opacity: 1; }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 768px) {
   h1,h2 {
     font-size:10px;
   }
