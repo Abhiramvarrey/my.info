@@ -9,19 +9,22 @@
   <script src="https://kit.fontawesome.com/7c902b6a7c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="">
   <nav id="navbar">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home"><i class="fa-solid fa-house fa-bounce"></i>Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#study">Acedamic details</a></li>
+      <li><a href="#study">Acedamics</a></li>
       <li><a href="#profile-link">Profile links</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+</div>
  <h1 id="home" class="interview">Welcome  to  my resume  landing  page</h1>
- <div class="content">
+ <div class="content" id="about">
     <div class="about">
-      <a id="about"><span>About me</span></a><br>
+      <a></a>
+      <a><span>About me</span></a><br>
       <a class="para">Hello there, my name is Abhiram. I am currently pursuing a 4/4 b-tech in the ECE programme, and my cgpa is 8.68. I am technically proficient in the Python, C, and web technologies, particularly HTML and CSS. I serve as one of the class reps and am presently the coordinator for the cell promoting women's empowerment.I have a strong interest in programming.
       </a>
     </div>
@@ -38,8 +41,9 @@
       </div>
     </div>
  </div>
-    <div class="contentbox">
-      <h1 id="study"><span>Acedamic details</span></h1>
+ <div>
+    <div class="contentbox" id="study">
+      <h1><span>Acedamics</span></h1>
       <h2 class="acedamic">
           <span>B-TECH<br> 2020 - PRESENT</span></h2>
           <p class="para">pursuing b.tech in SRKR ENGINEERING COLLEGE the stream of electronics and communication engineering with 8.68 cgpa till now</p>
@@ -52,6 +56,8 @@
           completed board of secondary education in SASI EM HIGH SCHOOL with 9.7 gpa
         </p>
     </div>
+  </div>
+  <div class="profilebox">
   <h2 id="profile-link"><span>PROFILE LINKS</span></h2>
     <button type="button" class="social-buttons">
     <a href="https://flowcv.com/resume/npa219j9ao"><i class="fa-solid fa-file fa-beat" style="color:black;"></i>Download Resume
@@ -69,20 +75,31 @@
     <a href="https://www.facebook.com/abhi.varrey" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i>Facebook  
     </a>
     </button>
-    <h1 id="contact"><span>contact me via whatsapp</span></h1>
-       <button class="social-buttons">
+     <h1 id="contact"><span>contact me via whatsapp</span></h1>
+       <button  class="social-buttons">
         <a href="https://api.whatsapp.com/send?phone=916300894287"><i class="fa-solid fa-brands fa-whatsapp fa-shake"></i>whatsapp</a>
        </button>
-     <div class="lowerpage"><h1><span>Contact details</span></h1>
-       <span>phone no: </span>  <a class="para">+91 6300894287</a><br>
-       <span>email id: </span> <a class="para"> abhiramvarrey1@gmail.com</a>
+  </div>
+  <footer>
+     <div class="lowerpage">
+      <div class="lowercont"><span>Contact details</span><br>
+       <span>phone no: </span>  <a>+91 6300894287</a><br>
+       <span>email id: </span> <a> abhiramvarrey1@gmail.com</a>
+      </div>
+      <div class="lowercont">
+        <span>Follow me</span><br>
+        <a href="https://github.com/Abhiramvarrey"><i class="fa-brands fa-github fa-beat"></i></a>
+        <a href="https://www.linkedin.com/in/abhiram-sai-ganesh-varrey-a0200026b"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+        <a href="https://www.instagram.com/__abhi_._ram__"><i class="fa-brands fa-instagram fa-beat"></i></a>
+      </div>
      </div>
+    </footer>
     <script>
       window.onscroll = function() {myFunction()};
       
       var navbar = document.getElementById("navbar");
       var sticky = navbar.offsetTop;
-      
+      var contentbox=document.getElementsByClassName("contentbox")
       function myFunction() {
         if (window.pageYOffset <= sticky) {
           navbar.classList.add("sticky");
