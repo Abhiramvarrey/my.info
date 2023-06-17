@@ -137,6 +137,7 @@ p{
 }
 .insta{
   background:linear-gradient(#f9ce34,#ee2a7b,#6228d7);
+  background-repeat: repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -185,6 +186,23 @@ footer {
   color:white;
   margin:5px;
   padding:1px;
+}
+.float{
+	position:fixed;
+	width:30px;
+	height:30px;
+	bottom:20px;
+	right:30px;
+  font-size:22px;
+	background-color:rgb(181, 158, 208);
+	color:#000000;
+	border-radius:30px;
+	text-align:center;
+	box-shadow: 1px 1px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
 }
 @keyframes fade-in {
   0% { opacity: 0; }
