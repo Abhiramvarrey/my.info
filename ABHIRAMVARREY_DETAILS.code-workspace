@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../practice"
+		}
+	],
+	"settings": {
+		"codegpt.apiKey": "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",
+		"codegpt.model": "ChatGPT"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python"
+		]
+	}
+}
