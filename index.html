@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/7c902b6a7c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <div>
@@ -59,61 +60,69 @@
   </div>
   <div> <div></div>
       <div class="skills">
-        <h4>SKILLS</h4>
-        <div class="tech"><pre>
-          <h3>Technical skills</h3>
-          <p>C language</p>
-          <p>Python</p>
-          <p>Web technologies(HTML,CSS,JS)</p>
-          <p>Arduino</p>
-          <p>Sql</p>
-          <p>Cadence</p></pre>
-      </div>
-     <div class="tech">
-      <pre>
-        <h3>interpersonal skills</h3>
-        <p>Leadership</p>
-        <p>Fast Learner</p>
-        <p>Colaborative</p>
-        <p>Active Listner</p>
-        <p>Time management</p>
-        <p></p>
-      </pre>
+        <table> <h4 style="color:rgb(246, 199, 112);">Skills</h4>
+          <tr>
+            <th>TECHNICAL SKILLS</th>
+            <th>INTERPERSONAL SKILLS</th>
+          </tr>
+          <tr>
+            <td>C language</td>
+            <td>Leadership</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Fast Learner</td>
+          </tr>
+          <tr>
+            <td>Web technologies(HTML,CSS,JS)</td>
+            <td>Colaborative</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>Active Listner</td>
+          </tr>
+          <tr>
+            <td>Arduino</td>
+            <td>Time management</td>
+          </tr>
+          <tr>
+            <td>cadence</td>
+            <td></td>
+          </tr>
+        </table>
     </div>
   </div>
-  <div class="projectlink">
-    <p style="color:rgb(246, 199, 112)">DJANGO PROJECT</p>
-    <pre>
+  <div class="contentbox">
+    <pre><h3 style="color:rgb(246, 199, 112)">DJANGO PROJECT</h3></pre>
     <a>Join us on a tour through our creative Django project, which copies the digital architecture of a renowned global firm. 
       Our comprehensive solution reimagines user registration, login, profile, and company information  inside a dynamic and 
       user-friendly interface. Join us as we explore the complexities of creating a reliable and secure system that accurately
       captures the essence of a parallel business entity.</a>
-    <button type="button" class="social-buttons">
-      <a href="django1">Django-Project</a>
-    </button>
-    </pre>
+      <div>   <button type="button" class="social-buttons">
+      <a href="django1.zip">Django-Project</a>
+    </button></div>
   </div>
-  <div class="profilebox">
+  <div class="profilebox" id="profile-link">
   <h2 id="profile-link"><span>PROFILE LINKS</span></h2>
     <button type="button" class="social-buttons">
-    <a href="https://flowcv.com/invite/o8l220bkne" style="color:black"><i class="fa-solid fa-file fa-beat" ></i>Download Resume
+    <a href="https://flowcv.com/resume/npa219j9ao" style="color:black"><i class="fa-solid fa-file fa-beat" ></i>Download Resume
     </a>
     </button>
     <button type="button" class="social-buttons">
-    <a href="https://www.linkedin.com/in/abhiram-sai-ganesh-varrey-a0200026b" style="color:#0072b1"><i class="fa-brands fa-linkedin fa-beat"></i>LinkedIn
+    <a href="https://www.linkedin.com/in/abhiram-sai-ganesh-varrey-a0200026b" style="color:#0072b1" target="_blank"><i class="fa-brands fa-linkedin fa-beat"></i>LinkedIn
     </a>
     </button>
     <button type="button" class="social-buttons">
-    <a href="https://www.instagram.com/__abhi_._ram__" style="color: #c7044f;"><i class="fa-brands fa-instagram fa-beat insta"></i>Instagram
+    <a href="https://www.instagram.com/__abhi_._ram__" style="color: #c7044f;" target="_blank"><i class="fa-brands fa-instagram fa-beat insta"></i>Instagram
     </a>
     </button>
     <button type="button" class="social-buttons">
-    <a href="https://www.facebook.com/abhi.varrey" style="color:#1877f2"><i class="fa-brands fa-facebook fa-beat"></i>Facebook  
+    <a href="https://www.facebook.com/abhi.varrey" style="color:#1877f2" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i>Facebook  
     </a>
     </button>
-     <h1 id="contact"><span>contact me via whatsapp</span></h1>
+     <h1 id="contact"><span>LET'S TALK</span></h1>
       <button class="social-buttons">
-        <a href="https://api.whatsapp.com/send?phone=916300894287" style="color: #55cd62;"><i class="fa-solid fa-brands fa-whatsapp fa-shake"></i>whatsapp</a>
+        <a href="https://api.whatsapp.com/send?phone=916300894287" style="color: #55cd62;" target="_blank"><i class="fa-solid fa-brands fa-whatsapp fa-shake"></i>whatsapp</a>
       </button>
   </div>
   <footer>
@@ -142,10 +151,8 @@
     </footer>
     <script>
       window.onscroll = function() {myFunction()};
-      var hov=document.getElementById("hov")
       var navbar = document.getElementById("navbar");
       var sticky = navbar.offsetTop;
-      var contentbox=document.getElementsByClassName("contentbox")
       function myFunction() {
 
         if (window.pageYOffset <= sticky) {
