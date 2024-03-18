@@ -52,7 +52,7 @@ h1,h2,h4 {
 }
 #navbar{
   text-align: left;
-  position: absolute;
+  position: fixed;
   font-size:large;
   top:0px;
   width: 100%;
